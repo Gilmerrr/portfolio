@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    color: #a9a9a9;
+}
+
+li, a ,button {
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 25px;
+    color: #efefef;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 100px;
+    box-shadow: #222    ;
+}
+
+#skills {
+    padding-top: 20rem;
+    
+}
+
+#about {
+    padding-top: 10rem;
+}
+.nav-default {
+    width: 100%;
+    height: 50px;
+    background-color: #181818;
+    position: fixed;
+    top: 0px;
+    transition: opacity 1s;
+    opacity: .9;
+}
+
+.nav-default.hide {
+    opacity: 0;
+}
+    
+
+.skills-text {
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    padding-top: 6px;
+    margin-left: 10px;
+    
+    position: relative;
+}
+
+
+.nav-default a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #a9a9a9;
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+
+    transition: all ease-in-out 225ms;
+
+}
+
+.profile-img {
+    height: 30vh;
+    border: .3rem solid #efefef;
+    border-radius: 50%;
+
+}
+
+.intro-container {
+    border: 2px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.img-container {
+    padding-right: 3rem;
+}
+a:hover::before {
+    width:  100%;
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+.intro {
+    padding-top: 18rem;
+    padding-bottom: 15rem;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-logo {
+      height: px;
+      width: 26px;
+}
+
+.link-logo-mail {
+    height: 26px;
+    width: 26px;
+}
+
+.links-container {
+      display: flex;
+      align-items: center;
+      padding-bottom: .25rem;
+      letter-spacing: .25px;
+}
+
+.section-header {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #efefef;
+} 
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.skills-single {
+
+    padding-right: 3rem;
+}
+
+.skills-img {
+    width: 120px;
+    height: 120px;
+    padding-bottom: 10px;
+}
+
+.skills-img-php {
+    width: 120px;
+    height: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills-img-sql {
+    width: 120px;
+    height: 120px;
+    top: -10px;
+    padding-bottom: 10px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: .25px;
+    padding-right: 8rem ;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.training-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid #a9a9a9;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+.training-single {
+    margin: 10px 0px;
+    max-width: 100%;
+    padding-left: 11.5rem;
+}
+
+.training-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-left: 11.5rem;
+}
+
+.training-text {
+    text-align: center;
+    flex: 2;
+}
+
+.training-time {
+    text-align: center;
+    flex: 1;
+}
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+}

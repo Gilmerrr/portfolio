@@ -1,0 +1,188 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script
+       src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+       crossorigin="anonymous"></script>
+        <title> Gilmer | Portfolio</title>
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        <header>
+
+            <nav class="nav-default">
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>   
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section id="home">
+
+            <div class="intro">
+                <div class="img-container">
+                    <img class="profile-img" src="img/profile.jpg">
+                </div>
+                <div class="intro-container">
+                    <h1>Hello, I'm Gilmer R. Tueres</h1>
+                    <h2>An aspiring web developer</h2>
+                    <div class="links-container">
+                        <img src="img/git.png" alt="" class="link-logo">
+                        <p>github.com/Gilmerrr</p>
+                    </div>
+                    <div class="links-container">
+                        <img src="img/mail.png" alt="" class="link-logo-mail">
+                        <p>tueres.gilmer@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div id="skills">
+
+        </div>
+        <section>
+
+            <div>
+                <h1 class="section-header" >SKILLS</h1>
+
+                <div class="skills-container">
+                    <div class="skills-single">
+                        <img src="img/HTML.png" alt="" class="skills-img">
+                        <h3 class="skills-text">HTML</h3>
+                    </div>
+                    <div class="skills-single">
+                        <img src="img/CSS.png" class="skills-img">
+                        <h3 class="skills-text">CSS</h3>
+                    </div>
+                    <div class="skills-single">
+                        <img src="img/Javascript.png" class="skills-img">
+                        <h3 class="skills-text">Javascript</h3>
+                    </div>
+
+                    <div class="skills-single">
+                        <img src="img/Github.png" class="skills-img">
+                        <h3 class="skills-text">Git</h3>
+                    </div>
+
+                    <div class="skills-single">
+                        <img src="img/java.png" class="skills-img">
+                        <h3 class="skills-text">java</h3>
+                    </div>
+
+                    <div class="skills-single">
+                        <img src="img/Jquery.png" class="skills-img">
+                        <h3 class="skills-text">Jquery</h3>
+                    </div>
+                    <div class="skills-single">
+                        <img src="img/PHP.png" class="skills-img-php">
+                        <h3 class="skills-text">PHP</h3>
+                    </div>
+                    <div class="skills-single">
+                        <img src="img/SQL.png" class="skills-img-sql">
+                        <h3 class="skills-text">SQL</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about">
+
+            <h1 class="section-header">ABOUT</h1>
+            <div class="about-container">
+               
+
+              <div class="about-text">
+            
+                            <h3>Hello, I'm Gilmer R. Tueres an Aspiring Web Developer from Taguig, Philippines.</h3>
+                            <h3>I currently know a small amount of programming languages, but I'm looking to</h3>
+                            <h3>learn more to hone and improve my skills as a developer in this fast evolving</h3>
+                            <h3>industry.</h3>
+                    
+                </div>
+                    <div class="training-container"> 
+                        <div class="training-header">
+                            <h1>TRAININGS ATTENDED</h1>     
+                        </div>    
+                                <div class="training-single">
+
+                                    <div class="training-text">
+                                        <h2>PUP Paranaque Campus City</h2>
+                                        <p>“Emerging Trends in Information Technology: Data Mining”</p>
+                                    </div>
+                                    <div class="training-time">
+                                        <h3>JUNE 23, 2021</h3>
+                                    </div>
+                            
+                                </div>
+                                <div class="training-single">
+                                    <div class="training-text">
+                                        <h2>PUP Paranaque Campus City</h2>
+                                        <p>“Emerging Trends in Information Technology: PHP with MySQL Essential”</p>
+                                    </div>
+                                    <div class="training-time">
+                                        <h3>JUNE 23, 2021</h3>
+                                    </div>
+
+                            </div> 
+                            <div class="training-single">
+                                    <div class="training-text">
+                                        <h2>Ground Gurus</h2>
+                                        <p>"Introduction to Algorithms, Data Structures, & Design Patterns for Aspiring Developers"</p>
+                                    </div>
+
+                                    <div class="training-time"> 
+                                        <h3>April 10, 2021</h3>
+                                    </div>
+                            </div>                  
+                            <div class="training-single">
+                                    <div class="training-text">
+                                        <h2>RVN Tech-Voc INC.(TESDA)</h2>
+                                        <p>“Web Development II”</p>
+                                    </div>
+
+                                    <div class="training-time">
+                                        <h3>Dec 2020 - Jan 2021</h3>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+    
+    </body>
+    <script>
+        $(document).ready(function(){
+
+            var lastScrollTop = 0, delta = 5;
+            var nav = $('.nav-default');
+	        $(window).scroll(function(){
+		    var nowScrollTop = $(this).scrollTop();
+		    if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+		 	if (nowScrollTop > lastScrollTop){
+                
+                nav.addClass('hide');
+		 	} else {
+                nav.removeClass('hide');
+			}
+		 lastScrollTop = nowScrollTop;
+		 }
+	 });
+
+        });
+    </script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</html> 
